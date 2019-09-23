@@ -1,0 +1,39 @@
+---
+title: "Overcooked models <br> .smaller[Mixing prediction, explanation, confounders, and mediators]"
+subtitle: "<br>"
+author: "Travis Gerke, ScD"
+date: "IDSC 2019-09-27"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: moffitt-xaringan.css
+    nature:
+      titleSlideClass: ["bottom", "left"]
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: true
+---
+
+<!-- 
+template initialized via:
+rmarkdown::draft(file = "index.Rmd", template = "moffitt-xaringan", 
+  package = "grkmisc", edit = FALSE)
+-->
+
+<!--background-image: url(figures/slideshow.png)
+background-size: 50%
+background-position: bottom 10% right 10%-->
+
+# First slide
+
+.pull-left[
+- Some stuff
+ + Bleh
+
+- Other stuff
+ + Bleh
+]
+
+---
