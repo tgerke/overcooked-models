@@ -16,17 +16,25 @@ output:
       countIncrementalSlides: true
 ---
 
-<!-- 
-template initialized via:
-rmarkdown::draft(file = "index.Rmd", template = "moffitt-xaringan", 
-  package = "grkmisc", edit = FALSE)
--->
+background-image: url(figures/allcancers.png)
+background-size: 70%
+background-position: bottom 20% center
 
-<!--background-image: url(figures/slideshow.png)
-background-size: 50%
-background-position: bottom 10% right 10%-->
+# Motivating example: prostate cancer
 
-# First slide
+---
+
+# What are "risk factors" for death?
+
+---
+
+background-image: url(figures/deathrates.png)
+background-size: 90%
+background-position: bottom 20% center
+
+# Disparities in prostate cancer deaths
+
+---
 
 .pull-left[
 - Some stuff
@@ -35,5 +43,3 @@ background-position: bottom 10% right 10%-->
 - Other stuff
  + Bleh
 ]
-
----
