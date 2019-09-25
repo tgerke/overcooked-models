@@ -20,11 +20,56 @@ background-image: url(figures/allcancers.png)
 background-size: 70%
 background-position: bottom 20% center
 
-# Motivating example: prostate cancer
+## Motivating example: prostate cancer
+
+---
+
+background-image: url(figures/autopsy.png)
+background-size: 45%
+background-position: bottom 10% center
+
+## More men die with prostate cancer than from it
+
+- 5-year survival $\approx$ 98% and <10% of prostate cancer patients have fatal disease<br><br>
+- 2.9 million men living with a diagnosis in US
+  + 42 million latent (undiagnosed) cases!
+
+```{css, echo=FALSE}
+.footer-1 {
+  position: absolute;
+  top: 40%;
+  left: 34%;
+}
+```
+.footer-1[.smaller[Jahn et al. _Int J Cancer_ 2015]]
+
+---
+background-image: url(figures/incidence.png)
+background-size: 55%
+background-position: bottom 10% center
+
+## PSA screening trends determine cancer incidence
+
+- PSA screening $\longrightarrow$ high rates of overdiagnosis and overtreatment
+  + Up to 2/3 of prostate cancers are overdiagnosed, most are treated<sup>.smaller[1]</sup>
+```{css, echo=FALSE}
+.footer-1 {
+  position: absolute;
+  top: 28%;
+  left: 75%;
+}
+```
+.footer-1[.smaller[1\. Loeb et al. _Eur Urol_ 2014]]
 
 ---
 
 # What are "risk factors" for death?
+
+---
+
+# Correlation is not causation
+
+Except when it is
 
 ---
 
@@ -43,3 +88,4 @@ background-position: bottom 20% center
 - Other stuff
  + Bleh
 ]
+
