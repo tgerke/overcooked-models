@@ -93,9 +93,64 @@ background-position: bottom 10% center
 
 - What are the causes of lethal disease?
   + If we know these, won't we also know the answer to the previous question, "How can we distinguish indolent from lethal disease?"
+
 ---
 
-# What are "risk factors" for death?
+background-image: url(figures/complicated.gif)
+background-size: 80%
+background-position: bottom 20% center
+
+## It's complicated.
+
+---
+
+background-image: url(figures/explainpredict.png)
+background-size: 90%
+background-position: bottom 20% center
+
+## Good prediction models $\ne$ good causal models
+
+---
+
+## Explanatory modeling = causal inference
+
+- Test causal hypotheses for mechanistic understanding
+  + Randomized experiments/trials are a gold standard
+  + Increasingly, causal inference is conducted by evaluating association patterns within observational data according to specific rules
+  + Success: an understandable statistical model (e.g. regression) that fits data well according to an expert-guided mechanistic theory
+  
+## Predictive modeling = predicting future events
+- Models that use input values to accurately predict future outputs
+  + Study design includes training and validation data sets
+  + Success: a model built in the training data which need not be easily interpretable (e.g. neural net) works well in the validation data
+
+---
+
+background-image: url(figures/appendix.png)
+background-size: 60%
+background-position: bottom 20% center
+
+## Proof that good prediction $\ne$ good explanation
+
++ TL;DR version: prediction error is a tradeoff between bias and variance. You can use a biased model (in a causal sense) that has low variance to reduce error
+
+---
+
+background-image: url(figures/icecream.png)
+background-size: 60%
+background-position: bottom 20% center
+
+## Simpler for good prediction $\ne$ good explanation
+
++ You can build good prediction models with variables that have nothing to do with mechanism
+
+---
+
+## RCTs
+
+- Randomized experiments are the gold standard because they provide causal effect estimates
+  + Boilerplate explanation: "Because randomization adjusts for all confounders"
+  + Ok. But let’s make sure we’re on the same page re: what that means
 
 ---
 
@@ -112,12 +167,3 @@ background-position: bottom 20% center
 # Disparities in prostate cancer deaths
 
 ---
-
-.pull-left[
-- Some stuff
- + Bleh
-
-- Other stuff
- + Bleh
-]
-
