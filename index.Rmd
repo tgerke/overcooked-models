@@ -37,11 +37,12 @@ background-position: bottom 5% right 5%
 ]
 
 .talk-author[
-Travis Gerke, ScD
+Travis Gerke, ScD<br>
+.small[@travisgerke]
 ]
 
 .talk-date[
-September 27, 2019
+<!--September 27, 2019-->
 ]
 ]
 
@@ -373,6 +374,13 @@ background-position: bottom 10% center
   + And we be even better if we used more modern machine learning
 
 ---
+background-image: url(figures/ack.png)
+background-size: 60%
+background-position: bottom 70% center
 
+## The real heroes 
 
-
+<br><br><br><br><br><br><br><br><br>
+## Further details
+- https://www.gerkelab.com/
+- https://github.com/gerkelab
