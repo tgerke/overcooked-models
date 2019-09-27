@@ -8,15 +8,68 @@
   </head>
   <body>
     <textarea id="source">
-class: bottom, left, title-slide
 
-# Overcooked models <br> .smaller[Mixing prediction, explanation, confounders, and mediators]
-## <br>
-### Travis Gerke, ScD
-### IDSC 2019-09-27
+
+
+
+class: left bottom hide-count
+background-image: url(figures/moffittlogo.png)
+background-size: 22%
+background-position: bottom 5% right 5%
+
+&lt;div class="talk-logo"&gt;&lt;/div&gt;
+
+.talk-meta[
+.talk-title[
+# Overcooked models &lt;br&gt; .smaller[Mixing prediction, explanation, confounders, and mediators]
+]
+
+.talk-author[
+Travis Gerke, ScD
+]
+
+.talk-date[
+September 27, 2019
+]
+]
+
+&lt;style type="text/css"&gt;
+.talk-logo {
+  width: 150px;
+  height: 174px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-image: url('figures/GerkeLab-300dpi.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.talk-meta {
+  font-family: Overpass;
+  position: absolute;
+  text-align: left;
+  bottom: 10px;
+  left: 25px;
+}
+.talk-author {
+  color: #444;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1em;
+}
+.talk-date {
+  color: #666;
+  font-size: 1.25em;
+  line-height: 0;
+}
+
+.hide-count .remark-slide-number {
+  display: none;
+}
+
+&lt;/style&gt;
 
 ---
-
 
 background-image: url(figures/allcancers.png)
 background-size: 70%
@@ -134,7 +187,7 @@ background-position: bottom 20% center
 
 ## Proof that good prediction `\(\ne\)` good explanation
 
-+ TL;DR version: prediction error is a tradeoff between bias and variance. You can use a biased model (in a causal sense) that has low variance to reduce error
+- TL;DR version: prediction error is a tradeoff between bias and variance. You can use a biased model (in a causal sense) that has low variance to reduce error
 
 ---
 
@@ -144,21 +197,30 @@ background-position: bottom 20% center
 
 ## Simpler for good prediction `\(\ne\)` good explanation
 
-+ You can build good prediction models with variables that have nothing to do with mechanism
+- You can build good prediction models with variables that have nothing to do with mechanism
+
+---
+
+## Correlation is not causation, except when it is
+
+- The previous slide gave a good example of non-causative correlation
+  - But I also just said we can use associational patterns to infer causation
+  - So, which is it?&lt;br&gt;&lt;br&gt;
+- Directed acyclic graphs (DAGs) can guide us
+  - The most basic rule is that association flows through edges
+  - When two nodes are connected, we observe a statistical association
+  - When association persists when all spurious edges between two variables are blocked, the observed association is causal
 
 ---
 
 ## RCTs
 
 - Randomized experiments are the gold standard because they provide causal effect estimates
+
+Here's a DAG for an RCT
+
   + Boilerplate explanation: "Because randomization adjusts for all confounders"
   + Ok. But let’s make sure we’re on the same page re: what that means
-
----
-
-# Correlation is not causation
-
-Except when it is
 
 ---
 
