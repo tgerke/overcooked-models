@@ -293,3 +293,86 @@ background-position: bottom 10% center
 ]
 
 ---
+
+background-image: url(figures/racedag.png)
+background-size: 70%
+background-position: bottom 1% center
+
+## Let the DAG help us know what to do!
+- Are there confounders of race?
+
+---
+
+background-image: url(figures/confounders.png)
+background-size: 90%
+background-position: bottom 25% center
+
+## Oops.
+
+---
+
+background-image: url(figures/ncdb.png)
+background-size: 80%
+background-position: bottom 10% center
+
+## Let's try again
+- 1,380,357 prostate cancer patients in NCDB
+  + After subsetting to those with complete follow-up, created a density-matched 1:1 case-control sample of 12,256 patients
+  + Crude analysis by race: HR for death of 1.30 (95% CI: 1.18-1.44) comparing black to white patients
+  
+---
+
+<!--background-image: url(figures/mediatorhex.png)
+background-size: 8%
+background-position: bottom 10% left 40%-->
+
+## How to properly think about the role of access
+
+- Another _very important definition_: A mediator is a variable caused by exposure, which in turn, causes the outcome
+  + Effects can then be separated into _direct_ and _indirect_ components
+  + Methods for mediation analyses are a distinct branch of statistics
+  + Recommended resource: VanderWeele 2015 _Explanation in Causal Inference_
+  + For implementation in R, [https://github.com/GerkeLab/mediator](https://github.com/GerkeLab/mediator)
+  
+.pull-left[
+<img src="figures/mediationdag.png">
+]
+
+.pull-right[
+<img src="figures/racedag.png">
+]
+
+---
+
+background-image: url(figures/fullmodel.png)
+background-size: 30%
+background-position: bottom 10% right 15%
+
+## Effect of race is minimally mediated by access
+
+- One way to measure this is through insurance status
+  + The proportion of race effect mediated through insurance status $\approx 1$%
+  + We needed to adjust for many mediator-outcome confounders 
+  + [Hand-wave over other nuances &#x1F44B;]
+  + [Can discuss these at conclusion]
+  
+.pull-right[
+<img src="figures/mediatorhex.png" height=100px>
+]
+
+---
+
+background-image: url(figures/auc.png)
+background-size: 40%
+background-position: bottom 10% center
+
+## The published effort is still useful
+
+- Turns out, it's a decent predictive model!
+  + The below is AUC on a 20% hold-out validation data set from a simple logistic regression with all included factors
+  + And we be even better if we used more modern machine learning
+
+---
+
+
+
