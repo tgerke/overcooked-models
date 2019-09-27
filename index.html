@@ -206,21 +206,55 @@ background-position: bottom 20% center
 - The previous slide gave a good example of non-causative correlation
   - But I also just said we can use associational patterns to infer causation
   - So, which is it?&lt;br&gt;&lt;br&gt;
-- Directed acyclic graphs (DAGs) can guide us
+- Directed acyclic graphs (DAGs) help understand when correlation == causation
   - The most basic rule is that association flows through edges
   - When two nodes are connected, we observe a statistical association
   - When association persists when all spurious edges between two variables are blocked, the observed association is causal
 
+.pull-left[
+&lt;img src="figures/dag1.png"&gt;
+]
+
+.pull-right[
+&lt;img src="figures/dag2.png"&gt;
+]
+
 ---
 
-## RCTs
+background-image: url(figures/appshot.png)
+background-size: 70%
+background-position: bottom 20% center
 
-- Randomized experiments are the gold standard because they provide causal effect estimates
+## DAGs: there's an app for that
+- There are rules governing how association flows beyond the scope of this talk
+  + [https://apps.gerkelab.com/shinyDAG/](https://apps.gerkelab.com/shinyDAG/)
 
-Here's a DAG for an RCT
+---
 
-  + Boilerplate explanation: "Because randomization adjusts for all confounders"
-  + Ok. But let’s make sure we’re on the same page re: what that means
+## Example: Randomized trials as a gold stardard
+
+- Randomized experiments provide causal effect estimates
+  + Here's a DAG for an RCT under the null
+  + Boilerplate explanation: "Because randomization adjusts for all confounders"&lt;br&gt;&lt;br&gt;
+- _Very important definition:_ A confounder is a common cause of exposure and outcome
+
+.pull-left[
+&lt;img src="figures/dag3.png"&gt;
+]
+
+.pull-right[
+&lt;img src="figures/wiki.png"&gt;
+]
+
+&lt;style type="text/css"&gt;
+.footer-4 {
+  position: absolute;
+  top: 72%;
+  left: 70%;
+  color: #FF0000;
+}
+&lt;/style&gt;
+.footer-4[NO!]
 
 ---
 
@@ -228,7 +262,23 @@ background-image: url(figures/deathrates.png)
 background-size: 90%
 background-position: bottom 20% center
 
-# Disparities in prostate cancer deaths
+## Back to the motivating example: PCa disparities
+
+---
+
+background-image: url(figures/notrisk.png)
+background-size: 90%
+background-position: bottom 10% center
+
+## An artifact? "Confounding"?
+
+.pull-left[
+&lt;img src="figures/myth.png"&gt;
+]
+
+.pull-right[
+&lt;img src="figures/jamadess.png"&gt;
+]
 
 ---
     </textarea>
