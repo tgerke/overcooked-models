@@ -374,13 +374,13 @@ background-position: bottom 10% center
   + And we be even better if we used more modern machine learning
 
 ---
-background-image: url(figures/ack.png)
-background-size: 60%
-background-position: bottom 70% center
+background-image: url(figures/hexcollage.png)
+background-size: 30%
+background-position: bottom 10% right 10%
 
 ## The real heroes 
+<img src="figures/ack.png" height=300px>
 
-<br><br><br><br><br><br><br><br><br>
 ## Further details
 - https://www.gerkelab.com/
 - https://github.com/gerkelab
